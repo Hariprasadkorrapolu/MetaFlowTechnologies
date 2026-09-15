@@ -293,7 +293,7 @@ export default function ContactPage({ navigate }) {
 
               {/* Right Column: Interactive Contact Form */}
               <div>
-                <div className="mft-card" style={{ padding: "40px" }}>
+                <div className="mft-card mft-contact-form-card">
                   {submitted ? (
                     <div style={{ textAlign: "center", padding: "40px 10px" }}>
                       <div style={{ width: "72px", height: "72px", borderRadius: "50%", background: "rgba(0, 71, 239, 0.1)", color: "var(--mft-blue)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px auto" }}>
@@ -367,7 +367,7 @@ export default function ContactPage({ navigate }) {
                       )}
 
                       <form onSubmit={handleSubmit}>
-                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+                        <div className="mft-form-row">
                           <div className="mft-form-group">
                             <label className="mft-label">Full Name *</label>
                             <input 
@@ -392,7 +392,7 @@ export default function ContactPage({ navigate }) {
                           </div>
                         </div>
 
-                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+                        <div className="mft-form-row">
                           <div className="mft-form-group">
                             <label className="mft-label">Company Name *</label>
                             <input 
@@ -416,7 +416,7 @@ export default function ContactPage({ navigate }) {
                           </div>
                         </div>
 
-                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+                        <div className="mft-form-row">
                           <div className="mft-form-group">
                             <label className="mft-label">Primary Service *</label>
                             <select 

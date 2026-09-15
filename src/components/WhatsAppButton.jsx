@@ -11,11 +11,12 @@ export default function WhatsAppButton() {
 
   return (
     <div
+      className="mft-whatsapp-wrap"
       style={{
         position: "fixed",
         bottom: "28px",
         right: "28px",
-        zIndex: 9999,
+        zIndex: 990,
         display: "flex",
         alignItems: "center",
         gap: "12px"
@@ -23,6 +24,7 @@ export default function WhatsAppButton() {
     >
       {/* Tooltip on Desktop */}
       <div
+        className="mft-whatsapp-tooltip"
         style={{
           background: "var(--mft-navy)",
           color: "#FFFFFF",
@@ -54,9 +56,10 @@ export default function WhatsAppButton() {
         aria-label={`Chat with Metaflow Technologies on WhatsApp at ${whatsappFormatted}`}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        className="mft-whatsapp-fab"
         style={{
-          width: "60px",
-          height: "60px",
+          width: "56px",
+          height: "56px",
           borderRadius: "50%",
           background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
           color: "#FFFFFF",
